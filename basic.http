@@ -1,0 +1,7 @@
+
+### Test If ES Is Up
+GET http://localhost:9200/
+
+
+### Check Cluster Health
+GET http://localhost:9200/_cat/health?v&pretty
