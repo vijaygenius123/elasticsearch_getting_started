@@ -51,6 +51,21 @@ curl -XGET 'http://localhost:9200/_cat/indices?v&pretty'
 ```
 
 4. Get Nodes
-```
+```bash
 curl -XGET 'http://localhost:9200/_cat/nodes?v&pretty'
+```
+
+
+5. Create Index 
+```bash
+curl -XPUT 'http://localhost:9200/products?pretty'
+```
+
+Output 
+```bash
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "products"
+}
 ```
