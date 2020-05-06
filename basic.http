@@ -5,3 +5,9 @@ GET http://localhost:9200/
 
 ### Check Cluster Health
 GET http://localhost:9200/_cat/health?v&pretty
+
+### Check Indices 
+GET http://localhost:9200/_cat/indices?v&pretty
+
+### Check Nodes
+GET http://localhost:9200/_cat/nodes?v&pretty

@@ -43,3 +43,14 @@ Should Output
 poch      timestamp cluster        status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shards_percent
 1588750495 07:34:55  docker-cluster green           1         1      0   0    0    0        0             0                  -                100.0%
 ```
+
+3. Get indices
+
+```bash
+curl -XGET 'http://localhost:9200/_cat/indices?v&pretty'
+```
+
+4. Get Nodes
+```
+curl -XGET 'http://localhost:9200/_cat/nodes?v&pretty'
+```
